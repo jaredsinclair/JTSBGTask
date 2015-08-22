@@ -7,7 +7,7 @@ If you don't need a custom expiration handler:
 
 ```
 if let task = JTSBGTask.start() {
-    // Do long running stuff, then...
+    // Do long-running stuff, then...
     task.end()
 }
 ```
@@ -19,7 +19,7 @@ let task = JTSBGTask()
 
 let success = task.startWithExpirationHandler { /* clean up */ }
 if success {
-    // Do long unning stuff, then...
+    // Do long-running stuff, then...
     task.end()
 }
 ```
