@@ -1,6 +1,6 @@
 //
-//  bgtask.swift
-//  Rotation
+//  JTSBGTask.swift
+//  JTSBGTask
 //
 //  Created by Jared Sinclair on 8/15/15.
 //  Copyright © 2015 Nice Boy LLC. All rights reserved.
@@ -12,7 +12,7 @@ import UIKit
 
 //-----------------------------------------------------------------------------
 
-static func start() -> BGTask?
+static func start() -> JTSBGTask?
 
 Convenience for initializing a task with a default expiration handler;
 @return Returns nil if background task time was denied.
@@ -38,12 +38,12 @@ Ends the background task for `taskId`, if the id is valid.
 
 */
 
-public class BGTask {
+public class JTSBGTask {
     
     // MARK: Public
     
-    public static func start() -> BGTask? {
-        let task = BGTask();
+    public static func start() -> JTSBGTask? {
+        let task = JTSBGTask();
         let successful = task.startWithExpirationHandler(nil)
         return (successful) ? task : nil
     }
