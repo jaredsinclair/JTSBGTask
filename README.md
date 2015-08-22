@@ -23,3 +23,5 @@ if success {
     task.end()
 }
 ```
+
+JTSBGTask will call `[UIApplication endBackgroundTask:]` for you at all the appropriate times. You are only responsible for calling `end()` if your work finishes before the expiration handler pops.
