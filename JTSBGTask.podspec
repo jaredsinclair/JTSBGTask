@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JTSBGTask"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "Tidily request background task time on iOS."
   s.description      = "Tidily request background task time on iOS. I'm adding additional words here to satisy CocoaPods' pedantry."
   s.homepage         = "https://github.com/jaredsinclair/JTSBGTask"
