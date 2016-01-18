@@ -12,7 +12,7 @@ import UIKit
 
 //-----------------------------------------------------------------------------
 
-static func start() -> JTSBGTask?
+static func start() -> BackgroundTask?
 
 Convenience for initializing a task with a default expiration handler;
 @return Returns nil if background task time was denied.
@@ -38,12 +38,12 @@ Ends the background task for `taskId`, if the id is valid.
 
 */
 
-public class JTSBGTask {
+public class BackgroundTask {
     
     // MARK: Public
     
-    public static func start() -> JTSBGTask? {
-        let task = JTSBGTask();
+    public static func start() -> BackgroundTask? {
+        let task = BackgroundTask();
         let successful = task.startWithExpirationHandler(nil)
         return (successful) ? task : nil
     }
